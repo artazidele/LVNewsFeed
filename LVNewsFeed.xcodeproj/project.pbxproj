@@ -3,29 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C2AA370E25D866F600EB0A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA370D25D866F600EB0A67 /* AppDelegate.swift */; };
 		C2AA371025D866F600EB0A67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA370F25D866F600EB0A67 /* SceneDelegate.swift */; };
-		C2AA371225D866F600EB0A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA371125D866F600EB0A67 /* ViewController.swift */; };
+		C2AA371225D866F600EB0A67 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA371125D866F600EB0A67 /* NewsFeedViewController.swift */; };
 		C2AA371525D866F600EB0A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AA371325D866F600EB0A67 /* Main.storyboard */; };
 		C2AA371825D866F600EB0A67 /* LVNewsFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2AA371625D866F600EB0A67 /* LVNewsFeed.xcdatamodeld */; };
 		C2AA371A25D866F800EB0A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AA371925D866F800EB0A67 /* Assets.xcassets */; };
 		C2AA371D25D866F800EB0A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AA371B25D866F800EB0A67 /* LaunchScreen.storyboard */; };
+		C2AA372B25D93B4100EB0A67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA372A25D93B4100EB0A67 /* DetailViewController.swift */; };
+		C2AA372E25D93B4E00EB0A67 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA372D25D93B4E00EB0A67 /* WebViewController.swift */; };
+		C2AA373325D93DEE00EB0A67 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA373225D93DEE00EB0A67 /* Item.swift */; };
+		C2AA373725D93E9700EB0A67 /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = C2AA373625D93E9700EB0A67 /* Gloss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2AA370A25D866F600EB0A67 /* LVNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LVNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AA370D25D866F600EB0A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2AA370F25D866F600EB0A67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2AA371125D866F600EB0A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2AA371125D866F600EB0A67 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		C2AA371425D866F600EB0A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2AA371725D866F600EB0A67 /* LVNewsFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LVNewsFeed.xcdatamodel; sourceTree = "<group>"; };
 		C2AA371925D866F800EB0A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2AA371C25D866F800EB0A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2AA371E25D866F800EB0A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2AA372A25D93B4100EB0A67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C2AA372D25D93B4E00EB0A67 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C2AA373225D93DEE00EB0A67 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AA373725D93E9700EB0A67 /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +66,51 @@
 		C2AA370C25D866F600EB0A67 /* LVNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				C2AA370D25D866F600EB0A67 /* AppDelegate.swift */,
-				C2AA370F25D866F600EB0A67 /* SceneDelegate.swift */,
-				C2AA371125D866F600EB0A67 /* ViewController.swift */,
-				C2AA371325D866F600EB0A67 /* Main.storyboard */,
+				C2AA373125D93DDA00EB0A67 /* Model */,
+				C2AA372525D8674100EB0A67 /* AppDelegate */,
+				C2AA372825D932EC00EB0A67 /* Controllers */,
+				C2AA372725D932E000EB0A67 /* View */,
 				C2AA371925D866F800EB0A67 /* Assets.xcassets */,
-				C2AA371B25D866F800EB0A67 /* LaunchScreen.storyboard */,
 				C2AA371E25D866F800EB0A67 /* Info.plist */,
 				C2AA371625D866F600EB0A67 /* LVNewsFeed.xcdatamodeld */,
 			);
 			path = LVNewsFeed;
+			sourceTree = "<group>";
+		};
+		C2AA372525D8674100EB0A67 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA370D25D866F600EB0A67 /* AppDelegate.swift */,
+				C2AA370F25D866F600EB0A67 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C2AA372725D932E000EB0A67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA371325D866F600EB0A67 /* Main.storyboard */,
+				C2AA371B25D866F800EB0A67 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2AA372825D932EC00EB0A67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA371125D866F600EB0A67 /* NewsFeedViewController.swift */,
+				C2AA372A25D93B4100EB0A67 /* DetailViewController.swift */,
+				C2AA372D25D93B4E00EB0A67 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C2AA373125D93DDA00EB0A67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA373225D93DEE00EB0A67 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +129,9 @@
 			dependencies = (
 			);
 			name = LVNewsFeed;
+			packageProductDependencies = (
+				C2AA373625D93E9700EB0A67 /* Gloss */,
+			);
 			productName = LVNewsFeed;
 			productReference = C2AA370A25D866F600EB0A67 /* LVNewsFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +159,9 @@
 				Base,
 			);
 			mainGroup = C2AA370125D866F600EB0A67;
+			packageReferences = (
+				C2AA373525D93E9700EB0A67 /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = C2AA370B25D866F600EB0A67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,8 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2AA371225D866F600EB0A67 /* ViewController.swift in Sources */,
+				C2AA371225D866F600EB0A67 /* NewsFeedViewController.swift in Sources */,
+				C2AA372E25D93B4E00EB0A67 /* WebViewController.swift in Sources */,
 				C2AA370E25D866F600EB0A67 /* AppDelegate.swift in Sources */,
+				C2AA372B25D93B4100EB0A67 /* DetailViewController.swift in Sources */,
+				C2AA373325D93DEE00EB0A67 /* Item.swift in Sources */,
 				C2AA371825D866F600EB0A67 /* LVNewsFeed.xcdatamodeld in Sources */,
 				C2AA371025D866F600EB0A67 /* SceneDelegate.swift in Sources */,
 			);
@@ -343,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2AA373525D93E9700EB0A67 /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2AA373625D93E9700EB0A67 /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2AA373525D93E9700EB0A67 /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C2AA371625D866F600EB0A67 /* LVNewsFeed.xcdatamodeld */ = {
